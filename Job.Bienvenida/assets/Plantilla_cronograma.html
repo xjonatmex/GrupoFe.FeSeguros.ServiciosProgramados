@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Cronograma</title>
+    <style>
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                padding: 5px;
+                border: 1px solid black;
+            }
+
+            table.border td {
+                padding: 5px;
+                border: 1px solid black;
+            }
+        table {
+            font-size: 10px;
+        }
+
+        body {
+           font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <tr><td colspan="7" height="20"></td></tr>
+        <tr>
+            <td colspan="2"><h3></h3></td>
+            <td align="center" colspan="3">
+                <h3>Cronograma de Pagos </h3>
+            </td>
+            <td valign="bottom">Ruc:</td>
+            <td valign="bottom">20101976867</td>
+        </tr>
+        <tr><td colspan="7" height="20"></td></tr>
+        <tr>
+            <td>Asegurado: </td>
+            <td colspan="4">
+                @CLIENTE
+            </td>
+            <td>Fecha:</td>
+            <td>@FECHA</td>
+        </tr>
+        <tr>
+            <td>Producto: </td>
+            <td colspan="4">
+                @PRODUCTO
+            </td>
+            <td>Hora:</td>
+            <td>@HORA</td>
+        </tr>
+        <tr>
+            <td style="width:15%">Monto Anual (Inc IGV): </td>
+            <td style="width:15%">
+                @MONTOSOLES
+            </td>
+            <td style="width:10%">Plazo:</td>
+            <td style="width:10%">@PLAZO</td>
+            <td style="width:30%"></td>
+            <td style="width:10%">Pagina:</td>
+            <td style="width:10%">1</td>
+        </tr>
+
+        <tr><td colspan="7" height="20"></td></tr>
+
+        <tr>
+            <td colspan="7" align="center">
+                <table class="border" width="80%" align="center">
+                    <thead>
+                        <tr style="background-color:#D8D8D8">
+                            <th align='center'>Nro. Cuota</th>
+                            <th align='center'>Fec. Venc.</th>
+                            <th align='center'>Monto</th>
+                            <th align='center'>Igv</th>
+                            <th align='center'>Total Cuota</th>
+                            <th align='center'>Estado</th>
+                            <th align='center'>Dias Atraso</th>
+                            <th align='center'>Fch. Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @FILAS
+                        <tr>
+                            <td style="border: 0px !important"></td>
+                            <td style="border: 0px !important"></td>
+                            <td align='right'><b>@TOTAL1</b></td>
+                            <td align='right'><b>@TOTAL2</b></td>
+                            <td align='right'><b>@TOTAL3</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
